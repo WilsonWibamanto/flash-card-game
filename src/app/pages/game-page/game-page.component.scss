@@ -1,0 +1,137 @@
+h1 {
+  font-size: 32px;
+  font-family: "Orelega One", cursive;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px 25px 0px;
+}
+
+.centralize {
+  display: flex;
+  justify-content: center;
+}
+
+label {
+  font-size: 28px;
+  font-family: "Orelega One", cursive;
+  display: flex;
+  justify-content: center;
+  margin: 40px 0px 45px 0px;
+}
+
+.math-calculation {
+  display: flex;
+}
+
+.flash-cards {
+  padding: 10px;
+}
+
+input {
+  height: 50px;
+  border: 0px solid;
+  background: floralwhite;
+  border-radius: 10px;
+  text-align: center;
+  font-family: "Orelega One", cursive;
+  font-size: 28px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+button.restart {
+  margin: 0px auto;
+  background-color: springgreen;
+  width: 100%;
+}
+
+button.restart:hover {
+  background-color: orangered;
+}
+
+button {
+  margin: 15px auto;
+  height: 40px;
+  width: 20%;
+  border: 0px solid;
+  background: yellow;
+  border-radius: 10px;
+  text-align: center;
+  font-family: "Orelega One", cursive;
+  font-size: 20px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: springgreen;
+}
+
+.user-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.user-score {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  background: deepskyblue;
+  padding: 10px 10px 0px 10px;
+  border-radius: 10px;
+  font-size: 28px;
+}
+
+.game-screen {
+  background-color: black;
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.game-over-dialog {
+  background-color: khaki;
+  position: absolute;
+  top: 150px;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  z-index: 1001;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.game-over-text {
+  margin: 60px 0px;
+  font-size: 28px;
+}
+
+.calculations {
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  border-radius: 10px;
+  height: 160px;
+  background-color: lawngreen;
+  padding: 5px;
+  p {
+    font-size: 20px;
+    text-decoration: underline;
+  }
+  span{
+    font-size: 20px;
+  }
+}

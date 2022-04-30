@@ -1,0 +1,33 @@
+h1 {
+  font-size: 100px;
+  color: white;
+  font-family: "Orelega One", cursive;
+}
+
+button {
+  margin: 50px auto;
+  height: 40px;
+  width: 20%;
+  border: 0px solid;
+  background: yellow;
+  border-radius: 10px;
+  text-align: center;
+  font-family: "Orelega One", cursive;
+  font-size: 20px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+
+button:hover {
+  background-color: springgreen;
+}
+
+
+.play-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

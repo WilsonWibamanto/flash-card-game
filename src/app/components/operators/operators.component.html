@@ -1,0 +1,11 @@
+<div class="cards-container">
+  <div class="cards-filling" [ngClass]="this.rollAgain > 0 ? 'flip-animation' : 'stop'">
+    <div class="front-card">
+      <p [ngClass]="this.rollAgain > 0 ? 'card-text' : 'stop'"> {{this.selected}}</p>
+    </div>
+    <div class="back-card">
+
+    </div>
+  </div>
+</div>
+

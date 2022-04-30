@@ -1,0 +1,50 @@
+<div [ngClass]="this.gameOver ? 'game-screen' : 'continue'">
+
+</div>
+
+  <div class="calculations">
+    <p>Last Calculations</p>
+    <div *ngFor="let calculation of this.calculations">
+        <span>{{calculation}}</span>
+    </div>
+  </div>
+
+<div class="centralize">
+  <div *ngIf="this.gameOver" class="game-over-dialog">
+    <p>Game Over</p>
+    <p class="game-over-text">Your Total Score is {{score}}</p>
+    <p class="game-over-text">Press the button below to restart the game</p>
+    <button class="restart" (click)="restartGame()">Restart</button>
+  </div>
+</div>
+
+<div class="user-score">
+  <p>
+    Score : {{score}}
+  </p>
+  <p>
+    Timer : {{minute}}:{{seconds}}
+  </p>
+</div>
+
+<div>
+  <h1>Solve the following calculations</h1>
+  <div class="math-calculation">
+    <div class="flash-cards">
+      <app-cards [rollAgain]="index" (result)="getFirstNumber($event)"></app-cards>
+    </div>
+    <div class="flash-cards">
+      <app-operators [rollAgain]="index" (ops)="getOperator($event)"></app-operators>
+    </div>
+    <div class="flash-cards">
+      <app-cards [rollAgain]="index" (result)="getSecondNumber($event)"></app-cards>
+    </div>
+  </div>
+
+  <div class="user-input">
+    <label for="answer">Enter your answer here </label>
+    <input #answer type="text">
+    <button  (click)="submitAnswer(answer.value)">Submit</button>
+  </div>
+
+</div>
